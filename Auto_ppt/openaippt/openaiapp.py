@@ -236,7 +236,7 @@ class PresentationApp:
         
     def generate_images(self):
         openai.api_key = os.getenv("OPENAI_API_KEY")
-        user_prompt = self.prompt_entry.get("1.0", "end-1c")
+        user_prompt = self.prompt_entry.get("0.0", ttk.END)
         user_prompt += " in style: " + self.style_dropdown.cget("text")
 
         response = openai.Image.create(
