@@ -569,7 +569,7 @@ if __name__ == "__main__":
     root.title("")
 
     # Simply set the theme
-    root.tk.call("source", "azure.tcl")
+    root.tk.call("source", "C:\Users\ryanw\OneDrive\Desktop\AutoAd - Copy\GUI-App-Python-main\Auto_ppt\openaippt")
     root.tk.call("set_theme", "light")
     app = PresentationApp(root)
     app.run()
